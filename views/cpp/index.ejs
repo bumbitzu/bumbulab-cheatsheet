@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2200736693287795"
+        crossorigin="anonymous"></script>
+    <title>C++ CheatSheet</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
+        integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2FW0OofqAVdCZiEYkd6dwGXthvkSFWOoGGJgS2CW70VK5dQM5Oh+7ne47s74VTg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/code.css">
+    <link rel="stylesheet" href="../theme-black.css">
+    <link rel="stylesheet" href="./css/toggle.css">
+    <link rel="stylesheet" href="./css/search.css">
+    <link rel="stylesheet" href="./css/table.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--icon-->
+    <link rel="icon" href="../../img/Logo.svg" type="image/icon type">
+
+    <style>
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Roboto", sans-serif;
+        }
+
+        .sidebar {
+            z-index: 3;
+            width: 250px;
+            top: 43px;
+            bottom: 0;
+            height: inherit;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="top">
+        <div class="bar theme top left-align large">
+            <a class="bar-item button right hide-large hover-white large theme-l1" href="javascript:void(0)"
+                onclick="openside()"><i class="fa fa-bars"></i></a>
+                <a href="#" class="bar-item button theme-l1">Logo</a>
+            <input type="text" id="searchInput" onkeyup="search()" placeholder="Search.." title="Type in a category">
+            
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <nav class="sidebar bar-block collapse theme-l5 animate-left" id="sidebar">
+        <a href="javascript:void(0)" onclick="closeside()" class="right xlarge padding-large hover-black hide-large"
+            title="Close Menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        
+
+        <ul id="menu">
+            <!--
+
+Hello World
+Variables and Data Types
+Constants and Literals
+Operators (Arithmetic, Logical, Bitwise)
+Input and Output (cin, cout)
+
+Conditional Statements (if, else, switch)
+Loops (for, while, do-while)
+Break and Continue
+
+Function Declaration and Definition
+Function Overloading
+Inline Functions
+Recursion
+Default and Reference Parameters
+
+One-dimensional Arrays
+Multi-dimensional Arrays
+String Handling (C-strings & std::string)
+
+Pointer Basics
+Pointer Arithmetic
+Pointers and Arrays
+Function Pointers
+References and Aliases
+
+Classes and Objects
+Constructors and Destructors
+Inheritance (Single, Multiple, Multilevel)
+Polymorphism (Function Overriding, Virtual Functions)
+Encapsulation and Abstraction
+
+Vectors, Lists, and Deques
+Maps and Sets
+Stacks and Queues
+Algorithms (Sorting, Searching)
+
+Dynamic Memory Allocation (new, delete)
+Smart Pointers (unique_ptr, shared_ptr)
+
+Reading and Writing Files
+fstream, ifstream, ofstream
+
+Try, Catch, Throw
+Custom Exceptions
+
+Threads in C++ (std::thread)
+Mutex and Locks
+
+Lambda Functions
+Namespaces
+Macros and Preprocessors
+            -->
+            <li id="defaultOpen" class="bar-item button" onclick="toggle(event,'cpp0')">Hello World</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp1')">Variables and Data Types</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp2')">Constants and Literals</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp3')">Operators</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp4')">Input and Output</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp5')">Conditional Statements</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp6')">Loops</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp7')">Break and Continue</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp8')">Function Declaration and Definition</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp9')">Function Overloading</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp10')">Inline Functions</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp11')">Recursion</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp12')">Default and Reference Parameters</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp13')">One-dimensional Arrays</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp14')">Multi-dimensional Arrays</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp15')">String Handling</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp16')">Pointer Basics</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp17')">Pointer Arithmetic</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp18')">Pointers and Arrays</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp19')">Function Pointers</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp20')">References and Aliases</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp21')">Classes and Objects</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp22')">Constructors and Destructors</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp23')">Inheritance</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp24')">Polymorphism</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp25')">Encapsulation and Abstraction</li>
+            
+
+
+        </ul>
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="overlay hide-large" onclick="closeside()" style="cursor:pointer" title="close side menu" id="myOverlay">
+    </div>
+
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <main class="main" style="margin-left:250px">
+        <script async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2200736693287795"
+            crossorigin="anonymous"></script>
+        <!-- a -->
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2200736693287795"
+            data-ad-slot="3711350611" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+            <%- content %>
+        <footer id="myFooter" class="theme-d3 padding-16">
+            <a href="https://bumbulab.com" target="_blank"><img src="../../img/Logo.svg" width="20px">bumbulab.com</a>
+        </footer>
+        <style>
+        </style>
+
+
+        <!-- END MAIN -->
+    </main>
+
+
+    <script src="./js/sidebar.js"></script>
+    <script src="./js/search.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/11.1.0/marked.min.js"></script>
+    <script src="./js/toggle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="../js/prism.js"></script>
+    <script>
+        Prism.highlightAll();
+    </script>
+
+</body>
+
+</html>
