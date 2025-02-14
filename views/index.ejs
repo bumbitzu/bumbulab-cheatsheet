@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheatSheet Hub</title>
+    <link rel="stylesheet" href="./styles.css">
+    <!-- Logo -->
+    <link rel="icon" href="../img/logo.png">
+</head>
+<style>
+    
+</style>
+<body>
+    <header>
+        <h1>CheatSheet Hub</h1>
+        <p>Your ultimate guide for quick coding references.</p>
+    </header>
+
+    <main>
+        <section class="search">
+            <input type="text" id="search" placeholder="Search for a cheat-sheet..." onkeyup="searchCheatSheets()">
+            <button onclick="searchCheatSheets()">Search</button>
+        </section>
+
+        <section id="categorii">
+            <div id="categories" class="categories">
+                <a href="./cpp/" target="_blank">
+                    <img src="https://skillicons.dev/icons?i=cpp" /><span>C++</span>
+                </a>
+                <a href="./python/" target="_blank">
+                    <img src="https://skillicons.dev/icons?i=python" /><span>Python</span>
+                </a>
+                <a href="./css/" target="_blank">
+                    <img src="https://skillicons.dev/icons?i=css" /><span>CSS</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CheatSheet Hub</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
