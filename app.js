@@ -2,9 +2,7 @@
 const express = require('express');
 const app = express();
 const port = 3000;
-const fs = require('fs').promises;
 const path = require('path');
-const createObject = require('./tools');
 const createContent = require('./tools');
 
 
@@ -26,14 +24,14 @@ app.get('/cheatsheet/cpp',async (req, res) => {
 
 });
 
-app.get('/cheatsheet/css',async (req, res) => {
+app.get('/cheatsheet/css/',async (req, res) => {
     
     const content = await createContent("css");
     res.render('css/index', {content: content});
 
 });
 
-app.get('/cheatsheet/python',async (req, res) => {
+app.get('/cheatsheet/python/',async (req, res) => {
     
     const content = await createContent("py");
     res.render('python/index', {content: content});
