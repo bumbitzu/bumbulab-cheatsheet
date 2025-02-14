@@ -3,4 +3,4 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/bumbulab/cheat-sheet/
     - mkdir -p $DEPLOYPATH
-    - rsync -av --exclude='.git' --exclude='.cpanel.yml' . $DEPLOYPATH
+    - /bin/cp * $DEPLOYPATH
