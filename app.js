@@ -34,6 +34,7 @@ app.get('/cheatsheet/css/',async (req, res) => {
 app.get('/cheatsheet/python/',async (req, res) => {
     
     const content = await createContent("py");
+    
     res.render('python/index', {content: content});
 
 });
