@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/bumbulab/cheetsheet/
+    - export DEPLOYPATH=/home/bumbulab/cheet-sheet/
     - /bin/cp -R * $DEPLOYPATH
