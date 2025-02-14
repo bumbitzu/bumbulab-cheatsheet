@@ -11,30 +11,27 @@ app.set('view engine', 'ejs');
 
 app.set('views', path.join(__dirname, '/views'));
 
-app.use(express.static(path.join(__dirname, '../public_html')));
+app.use(express.static(path.join(__dirname, '../public_html/cheatsheet')));
 
-app.get('/cheatsheet', (req, res) => {
-    res.render('index');
-});
 
-app.get('/cheatsheet/cpp',async (req, res) => {
+app.get('/cpp',async (req, res) => {
 
     const content = await createContent("cpp");
     res.render('cpp/index', {content: content});
 
 });
 
-app.get('/cheatsheet/css/',async (req, res) => {
+app.get('/css',async (req, res) => {
     
     const content = await createContent("css");
     res.render('css/index', {content: content});
 
 });
 
-app.get('/cheatsheet/python/',async (req, res) => {
+app.get('/python',async (req, res) => {
     
     const content = await createContent("py");
-    
+
     res.render('python/index', {content: content});
 
 });
