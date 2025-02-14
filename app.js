@@ -21,9 +21,22 @@ app.get('/cheatsheet', (req, res) => {
 
 app.get('/cheatsheet/cpp',async (req, res) => {
 
-   //const cppObj = await createObject();
     const content = await createContent("cpp");
     res.render('cpp/index', {content: content});
+
+});
+
+app.get('/cheatsheet/css',async (req, res) => {
+    
+    const content = await createContent("css");
+    res.render('css/index', {content: content});
+
+});
+
+app.get('/cheatsheet/python',async (req, res) => {
+    
+    const content = await createContent("py");
+    res.render('python/index', {content: content});
 
 });
 // Pornim serverul

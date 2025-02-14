@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2200736693287795"
+        crossorigin="anonymous"></script>
+    <title>Python CheatSheet</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
+        integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2FW0OofqAVdCZiEYkd6dwGXthvkSFWOoGGJgS2CW70VK5dQM5Oh+7ne47s74VTg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/code.css">
+    <link rel="stylesheet" href="../theme-black.css">
+    <link rel="stylesheet" href="../styles/toggle.css">
+    <link rel="stylesheet" href="../styles/search.css">
+    <link rel="stylesheet" href="../styles/table.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--icon-->
+    <link rel="icon" href="../../img/logo.png">
+    <!--SEO-->
+    <meta name="description" content="Python CheatSheet for beginners and professionals with examples on basics, control statements, functions, modules, libraries, and more.">
+    <meta name="keywords" content="Python, CheatSheet, Python CheatSheet">
+    <meta name="author" content="bumbulab">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#000000">
+    <meta property="og:title" content="Python CheatSheet">
+    <meta property="og:description" content="Python CheatSheet for beginners and professionals with examples on basics, control statements, functions, modules, libraries, and more.">
+    <meta property="og:image" content="https://bumbulab.com/img/Logo.svg">
+    <meta property="og:url" content="https://bumbulab.com/cheatsheet/python">
+    <meta property="og:site_name" content="bumbulab">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+   
+    
+
+    <style>
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Roboto", sans-serif;
+        }
+
+        .sidebar {
+            z-index: 3;
+            width: 250px;
+            top: 43px;
+            bottom: 0;
+            height: inherit;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="top">
+        <div class="bar theme top left-align large">
+            <a class="bar-item button right hide-large hover-white large theme-l1" href="javascript:void(0)"
+                onclick="openside()"><i class="fa fa-bars"></i></a>
+             <img src="../img/Python.svg" width="35">
+            
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <nav class="sidebar bar-block collapse theme-l5 animate-left" id="sidebar">
+        <a href="javascript:void(0)" onclick="closeside()" class="right xlarge padding-small hover-black hide-large"
+            title="Close Menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <input type="text" id="searchInput" onkeyup="search()" placeholder="Search.." title="Type in a category">
+        <!--
+        Python Cheat Sheet - Table of Contents
+1 Basics
+
+Comments
+Variables & Data Types
+Operators
+2 Control Flow
+
+Conditional Statements (if, elif, else)
+Loops (for, while)
+Loop Control Statements (break, continue, pass)
+3 Functions
+
+Defining Functions (def)
+Arguments and Return Values
+Lambda Functions
+4 Data Structures
+
+Lists (Creation, Methods, Slicing)
+Tuples (Immutable Sequences)
+Sets (Unique Elements, Methods)
+Dictionaries (Key-Value Pairs, Methods)
+5 String Manipulation
+
+String Methods (upper(), lower(), split(), etc.)
+String Formatting (f-strings, .format())
+Regular Expressions (Using re module)
+6 File Handling
+
+Reading & Writing Files (open(), read(), write())
+Working with CSV Files (csv module)
+7 Error Handling
+
+try-except Blocks
+Raising Exceptions (raise)
+Using finally
+8 Modules & Imports
+
+Importing Built-in Modules (math, random, datetime)
+Creating and Importing Custom Modules
+9 Object-Oriented Programming (OOP)
+
+Classes & Objects
+Constructors (__init__)
+Inheritance & Polymorphism
+10 Working with JSON & APIs
+
+Parsing JSON (json module)
+Making HTTP Requests (requests module)
+11 Multithreading & Multiprocessing
+threading Module
+multiprocessing Module
+12 Useful Python Libraries
+NumPy (Numerical Computing)
+Pandas (Data Analysis)
+Matplotlib (Data Visualization)
+13 Virtual Environments & Package Management
+Using venv
+Installing Packages with pip
+14 Python Best Practices
+Code Style (PEP 8)
+Writing Readable & Efficient Code
+        -->
+        <ul id="menu">
+            <li id="defaultOpen" class="bar-item button" onclick="toggle(event,'py0')">Comments</li>
+            <li class="bar-item button" onclick="toggle(event,'py1')">Variables & Data Types</li>
+            <li class="bar-item button" onclick="toggle(event,'py2')">Operators</li>
+            <li class="bar-item button" onclick="toggle(event,'py3')">Conditional Statements</li>
+            <li class="bar-item button" onclick="toggle(event,'py4')">Loops</li>
+            <li class="bar-item button" onclick="toggle(event,'py5')">Loop Control Statements</li>
+            <li class="bar-item button" onclick="toggle(event,'py6')">Defining Functions</li>
+            <li class="bar-item button" onclick="toggle(event,'py7')">Arguments and Return Values</li>
+            <li class="bar-item button" onclick="toggle(event,'py8')">Lambda Functions</li>
+            <li class="bar-item button" onclick="toggle(event,'py9')">Lists</li>
+            <li class="bar-item button" onclick="toggle(event,'py10')">Tuples</li>
+            <li class="bar-item button" onclick="toggle(event,'py11')">Sets</li>
+            <li class="bar-item button" onclick="toggle(event,'py12')">Dictionaries</li>
+            <li class="bar-item button" onclick="toggle(event,'py13')">String Methods </li>
+            <li class="bar-item button" onclick="toggle(event,'py14')">String Formatting</li>
+            <li class="bar-item button" onclick="toggle(event,'py15')">Regular Expressions</li>
+            <li class="bar-item button" onclick="toggle(event,'py16')">Reading & Writing Files</li>
+            <li class="bar-item button" onclick="toggle(event,'py17')">Working with CSV Files</li>
+            <li class="bar-item button" onclick="toggle(event,'py18')">try-except Blocks</li>
+            <li class="bar-item button" onclick="toggle(event,'py19')">Raising Exceptions (raise)</li>
+            <li class="bar-item button" onclick="toggle(event,'py20')">Using finally</li>
+            <li class="bar-item button" onclick="toggle(event,'py21')">Importing Built-in Modules</li>
+            <li class="bar-item button" onclick="toggle(event,'py22')">Creating and Importing Custom Modules</li>
+            <li class="bar-item button" onclick="toggle(event,'py23')">Classes & Objects</li>
+            <li class="bar-item button" onclick="toggle(event,'py24')">Constructors</li>
+            <li class="bar-item button" onclick="toggle(event,'py25')">Inheritance & Polymorphism</li>
+            <li class="bar-item button" onclick="toggle(event,'py26')">Parsing JSON</li>
+            <li class="bar-item button" onclick="toggle(event,'py27')">Making HTTP Requests (requests module)</li>
+            <li class="bar-item button" onclick="toggle(event,'py28')">threading Module</li>
+            <li class="bar-item button" onclick="toggle(event,'py29')">multiprocessing Module</li>
+            <li class="bar-item button" onclick="toggle(event,'py30')">NumPy </li>
+            <li class="bar-item button" onclick="toggle(event,'py31')">Pandas</li>
+            <li class="bar-item button" onclick="toggle(event,'py32')">Matplotlib</li>
+            <li class="bar-item button" onclick="toggle(event,'py33')">Using venv</li>
+            <li class="bar-item button" onclick="toggle(event,'py34')">Installing Packages with pip</li>
+            <li class="bar-item button" onclick="toggle(event,'py35')">Code Style (PEP 8)</li>
+            <li class="bar-item button" onclick="toggle(event,'py36')">Writing Readable & Efficient Code</li>
+        </ul>
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="overlay hide-large" onclick="closeside()" style="cursor:pointer" title="close side menu" id="myOverlay">
+    </div>
+
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <main class="main" style="margin-left:250px">
+            <%- content %>
+        <footer id="myFooter" class="theme-d3 padding-16">
+            <a href="https://bumbulab.com" target="_blank"><img src="../../img/Logo.svg" width="20px">bumbulab.com</a>
+        </footer>
+        <style>
+        </style>
+
+
+        <!-- END MAIN -->
+    </main>
+
+
+    <script src="../sidebar.js"></script>
+    <script src="../search.js"></script>
+    <script src="../toggle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script>
+        Prism.highlightAll();
+    </script>
+
+</body>
+
+</html>

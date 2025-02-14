@@ -1,0 +1,44 @@
+ Table of Contents
+CSS Basics
+
+Basic Selectors
+Grouping and Combining Selectors
+Attribute Selectors
+Pseudo-classes
+Pseudo-elements
+
+
+Content, Padding, Border, and Margin
+Box Sizing
+Display Property
+Typography
+
+Font Properties
+Text Formatting
+Text Alignment and Spacing
+
+Color Formats (Hex, RGB, HSL)
+Background Properties
+Gradients
+
+Static, Relative, Absolute, Fixed, and Sticky Positioning
+Flexbox
+CSS Grid
+
+Media Queries
+Units (px, em, rem, vw, vh, %)
+CSS Variables
+Animations and Transitions
+
+CSS Transitions
+CSS Animations
+Transformations (rotate, scale, skew)
+
+CSS Variables
+Custom Properties
+Filters and Shadows
+Clipping and Masking
+
+Performance Optimization
+Cross-browser Compatibility
+Accessibility Considerations

@@ -5,62 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CheatSheet Hub</title>
-    <link rel="stylesheet" href="styles.css">
-    <!--logo-->
+    <link rel="stylesheet" href="./styles.css">
+    <!-- Logo -->
     <link rel="icon" href="../img/logo.png">
 </head>
-
+<style>
+    
+</style>
 <body>
     <header>
         <h1>CheatSheet Hub</h1>
+        <p>Your ultimate guide for quick coding references.</p>
     </header>
 
     <main>
         <section class="search">
-            <input type="text" id="search" placeholder="Caută un cheat-sheet..." onkeyup="searchCheatSheets()">
-            <button onclick="searchCheatSheets()">Caută</button>
+            <input type="text" id="search" placeholder="Search for a cheat-sheet..." onkeyup="searchCheatSheets()">
+            <button onclick="searchCheatSheets()">Search</button>
         </section>
 
         <section id="categorii">
             <div id="categories" class="categories">
-            <a href="./cpp/" target="_blank">
-              <img src="https://skillicons.dev/icons?i=cpp" /><span class="none">c++ cpp</span>
-            </a>
-            <a href="#" target="_blank">
-                <img src="https://skillicons.dev/icons?i=cs" /><span class="none">sql</span>   
-            </a>
-            <a href="#" target="_blank" >
-                <img src="https://skillicons.dev/icons?i=python" /><span class="none">python</span>
-            </a>
-            <a href="#" target="_blank">
-                <img src="https://skillicons.dev/icons?i=java" /><span class="none">java</span>
-            </a>
-            <a href="#" target="_blank">
-                <img src="https://skillicons.dev/icons?i=javascript" /><span class="none">javascript</span>
-            </a>
-            <a href="#" target="_blank">
-                <img src="https://skillicons.dev/icons?i=html" /><span class="none">html</span>
-            </a>
-            <a href="#" target="_blank">
-                <img src="https://skillicons.dev/icons?i=css" /><span class="none">css</span>
-            </a>
-            <a href="#" target="_blank">
-                <img src="https://skillicons.dev/icons?i=react" /><span class="none">react</span>
-            </a>
-            <a href="#" target="_blank">
-                <img src="https://skillicons.dev/icons?i=angular" /><span class="none">angular</span>
-            </a>
-            <a href="#" target="_blank">
-                <img src="https://skillicons.dev/icons?i=vue" /><span class="none">vue</span>
-            </a>
-            <a href="#" target="_blank">
-                <img src="https://skillicons.dev/icons?i=php" /><span class="none">php</span>
-            </a>
-            <a href="#" target="_blank">
-                <img src="https://skillicons.dev/icons?i=laravel" /><span class="none">laravel</span>
-            </a>
-            
-
+                <a href="./cpp/" target="_blank">
+                    <img src="https://skillicons.dev/icons?i=cpp" /><span>C++</span>
+                </a>
+                <a href="./python/" target="_blank">
+                    <img src="https://skillicons.dev/icons?i=python" /><span>Python</span>
+                </a>
+                <a href="./css/" target="_blank">
+                    <img src="https://skillicons.dev/icons?i=css" /><span>CSS</span>
+                </a>
             </div>
         </section>
     </main>
