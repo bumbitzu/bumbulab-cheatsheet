@@ -3,4 +3,4 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/bumbulab/cheat-sheet/
     - mkdir -p $DEPLOYPATH
-    - /bin/cp * $DEPLOYPATH
+    - cp -r * $DEPLOYPATH # Copy all files to the deployment path
