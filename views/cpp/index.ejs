@@ -2,37 +2,58 @@
 <html lang="en">
 
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2200736693287795"
-        crossorigin="anonymous"></script>
-    <title>C++ CheatSheet</title>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
-        integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2FW0OofqAVdCZiEYkd6dwGXthvkSFWOoGGJgS2CW70VK5dQM5Oh+7ne47s74VTg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>C++ Cheat Sheet - Quick Reference</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="title" content="C++ Cheat Sheet - Quick Reference">
+    <meta name="description" content="Master C++ with this quick reference cheat sheet covering syntax, functions, classes, loops, and more. Perfect for beginners and advanced developers.">
+    <meta name="keywords" content="C++, C++ cheat sheet, C++ programming, C++ syntax, C++ quick reference, C++ functions, C++ classes, C++ loops, C++ operators, C++ pointers">
+    <meta name="author" content="Bumbu Adrian">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="web_author" content="bumbulab.com">
+
+    <!-- OpenGraph Meta Tags (pentru Facebook, LinkedIn) -->
+    <meta property="og:title" content="C++ Cheat Sheet - Quick Reference">
+    <meta property="og:description" content="Master C++ with this quick reference cheat sheet covering syntax, functions, classes, loops, and more.">
+    <meta property="og:image" content="https://bumbulab.com/seo/cpp.png">
+    <meta property="og:url" content="https://bumbulab.com/cheatsheet/cpp">
+    <meta property="og:site_name" content="bumbulab">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@bumbulab">
+    <meta name="twitter:creator" content="@bumbulab">
+    <meta name="twitter:title" content="C++ Cheat Sheet - Quick Reference">
+    <meta name="twitter:description" content="Master C++ with this quick reference cheat sheet covering syntax, functions, classes, loops, and more.">
+    <meta name="twitter:image" content="https://bumbulab.com/seo/cpp.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://bumbulab.com/seo/cpp.png">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2FW0OofqAVdCZiEYkd6dwGXthvkSFWOoGGJgS2CW70VK5dQM5Oh+7ne47s74VTg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/code.css">
-    <link rel="stylesheet" href="../theme-black.css">
+    <link rel="stylesheet" href="../styles/theme-black.css">
     <link rel="stylesheet" href="../styles/toggle.css">
     <link rel="stylesheet" href="../styles/search.css">
     <link rel="stylesheet" href="../styles/table.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--icon-->
-    <link rel="icon" href="../../img/logo.png">
+    <!--Canonical-->
+    <link rel="canonical" href="https://bumbulab.com/cheatsheet/cpp">
+    <!-- Inline CSS Optimization -->
 
     <style>
-        html,
-        body,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
+        html, body, h1, h2, h3, h4, h5, h6 {
             font-family: "Roboto", sans-serif;
         }
-
         .sidebar {
             z-index: 3;
             width: 250px;
@@ -66,51 +87,51 @@
         
 
         <ul id="menu">
-            <li id="defaultOpen" class="bar-item button" onclick="toggle(event,'cpp0')">Hello World</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp1')">Variables and Data Types</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp2')">Constants and Literals</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp3')">Operators</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp4')">Input and Output</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp5')">Conditional Statements</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp6')">Loops</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp7')">Break and Continue</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp8')">Function Declaration and Definition</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp9')">Function Overloading</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp10')">Inline Functions</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp11')">Recursion</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp12')">Default and Reference Parameters</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp13')">One-dimensional Arrays</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp14')">Multi-dimensional Arrays</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp15')">String Handling</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp16')">Pointer Basics</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp17')">Pointer Arithmetic</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp18')">Pointers and Arrays</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp19')">Function Pointers</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp20')">References and Aliases</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp21')">Classes and Objects</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp22')">Constructors and Destructors</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp23')">Inheritance</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp24')">Polymorphism</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp25')">Encapsulation and Abstraction</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp26')">Vectors, Lists, and Deques</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp27')">Maps and Sets</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp28')">Stacks and Queues</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp29')">Algorithms</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp30')">Dynamic Memory Allocation</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp31')">Smart Pointers</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp32')">Reading and Writing Files</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp33')">Function Templates</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp34')">Defining a Class Template</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp35')">Template Specialization</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp36')">Non-Type Template Parameters</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp37')">Variadic Templates</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp38')">Try, Catch, Throw</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp39')">Custom Exceptions</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp40')">Threads in C++</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp41')">Mutex and Locks</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp42')">Lambda Functions</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp43')">Namespaces</li>
-            <li class="bar-item button" onclick="toggle(event,'cpp44')">Macros and Preprocessors</li>
+            <li id="defaultOpen" class="bar-item button" onclick="toggle(event,'cpp','0')">Hello World</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','1')">Variables and Data Types</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','2')">Constants and Literals</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','3')">Operators</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','4')">Input and Output</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','5')">Conditional Statements</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','6')">Loops</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','7')">Break and Continue</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','8')">Function Declaration and Definition</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','9')">Function Overloading</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','10')">Inline Functions</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','11')">Recursion</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','12')">Default and Reference Parameters</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','13')">One-dimensional Arrays</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','14')">Multi-dimensional Arrays</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','15')">String Handling</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','16')">Pointer Basics</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','17')">Pointer Arithmetic</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','18')">Pointers and Arrays</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','19')">Function Pointers</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','20')">References and Aliases</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','21')">Classes and Objects</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','22')">Constructors and Destructors</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','23')">Inheritance</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','24')">Polymorphism</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','25')">Encapsulation and Abstraction</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','26')">Vectors, Lists, and Deques</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','27')">Maps and Sets</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','28')">Stacks and Queues</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','29')">Algorithms</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','30')">Dynamic Memory Allocation</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','31')">Smart Pointers</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','32')">Reading and Writing Files</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','33')">Function Templates</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','34')">Defining a Class Template</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','35')">Template Specialization</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','36')">Non-Type Template Parameters</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','37')">Variadic Templates</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','38')">Try, Catch, Throw</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','39')">Custom Exceptions</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','40')">Threads in C++</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','41')">Mutex and Locks</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','42')">Lambda Functions</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','43')">Namespaces</li>
+            <li class="bar-item button" onclick="toggle(event,'cpp','44')">Macros and Preprocessors</li>
             
 
 
@@ -120,9 +141,14 @@
     <!-- Overlay effect when opening sidebar on small screens -->
     <div class="overlay hide-large" onclick="closeside()" style="cursor:pointer" title="close side menu" id="myOverlay">
     </div>
+    <style>
+        /* Inițial, conținutul tabului este ascuns */
+/* Inițial, tab-ul este ascuns */
 
+
+    </style>
     <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-    <main class="main" style="margin-left:250px">
+    <main class="main" id="main"style="margin-left:250px">
             <%- content %>
         <footer id="myFooter" class="theme-d3 padding-16">
             <a href="https://bumbulab.com" target="_blank"><img src="../../img/Logo.svg" width="20px">bumbulab.com</a>
@@ -135,15 +161,15 @@
     </main>
 
 
-    <script src="../sidebar.js"></script>
-    <script src="../search.js"></script>
-    <script src="../toggle.js"></script>
+    <script src="../js/sidebar.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/toggle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="../js/prism.js"></script>
     <script>
         Prism.highlightAll();
     </script>
-
+    
 </body>
 
 </html>

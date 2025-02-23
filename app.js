@@ -1,10 +1,14 @@
 // Importă modulele necesare
 const express = require('express');
 const app = express();
-const port = 3000;
 const path = require('path');
 const createContent = require('./tools');
 
+require('dotenv').config();
+const port = process.env.PORT || 3000;
+
+app.use(express.json()); // for parsing application/json
+app.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
 // Setăm EJS ca motor de vizualizare
 app.set('view engine', 'ejs');
@@ -17,27 +21,64 @@ app.get('/cheatsheet', (req, res) => {
     res.render('index');
 });
 
+
+//---cpp
 app.get('/cheatsheet/cpp',async (req, res) => {
 
-    const content = await createContent("cpp");
+    const content = await createContent("cpp", '0');
     res.render('cpp/index', {content: content});
 
 });
+app.post('/cheatsheet/cpp/load', async (req, res) => {
+    const { id } = req.body;
 
+    try {
+        const content = await createContent("cpp", id);
+        res.json({ success: true, content: content }); // Adaugă success: true
+    } catch (error) {
+        console.error("Eroare la încărcarea conținutului:", error);
+        res.json({ success: false, content: "<p>Eroare la încărcare.</p>" });
+    }
+});
+
+//---sss
 app.get('/cheatsheet/css',async (req, res) => {
     
-    const content = await createContent("css");
+    const content = await createContent("css", '0');;
     res.render('css/index', {content: content});
 
 });
+app.post('/cheatsheet/css/load', async (req, res) => {
 
+    const { id } = req.body;
+    try {
+        const content = await createContent("css", id);
+        res.json({ success: true, content: content }); // Adaugă success: true
+    } catch (error) {
+        console.error("Error loading content:", error);
+        res.json({ success: false, content: "<p>Error loading content.</p>" });
+    }
+});
+
+//---python
 app.get('/cheatsheet/python',async (req, res) => {
     
-    const content = await createContent("py");
-
+    const content = await createContent("py", '0');;
     res.render('python/index', {content: content});
 
 });
+app.post('/cheatsheet/py/load', async (req, res) => {
+
+    const { id } = req.body;
+    try {
+        const content = await createContent("py", id);
+        res.json({ success: true, content: content }); // Adaugă success: true
+    } catch (error) {
+        console.error("Error loading content:", error);
+        res.json({ success: false, content: "<p>Error loading content.</p>" });
+    }
+});
+
 // Pornim serverul
 app.listen(port, () => {
     console.log(`Serverul rulează la http://localhost:${port}`);

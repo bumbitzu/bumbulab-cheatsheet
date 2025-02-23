@@ -2,70 +2,58 @@
 <html lang="en">
 
 <head>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2200736693287795"
-        crossorigin="anonymous"></script>
-    <title>CSS CheatSheet</title>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
-        integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2FW0OofqAVdCZiEYkd6dwGXthvkSFWOoGGJgS2CW70VK5dQM5Oh+7ne47s74VTg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CSS Cheat Sheet - Quick Reference</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="title" content="CSS Cheat Sheet - Quick Reference">
+    <meta name="description" content="Master CSS with this quick reference cheat sheet covering basic selectors, grouping selectors, attribute selectors, pseudo-classes, pseudo-elements, and more. Perfect for beginners and advanced developers.">
+    <meta name="keywords" content="CSS, CSS cheat sheet, CSS selectors, CSS properties, CSS quick reference, CSS grouping selectors, CSS attribute selectors, CSS pseudo-classes, CSS pseudo-elements">
+    <meta name="author" content="Bumbu Adrian">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="web_author" content="bumbulab.com">
+
+    <!-- OpenGraph Meta Tags (pentru Facebook, LinkedIn) -->
+    <meta property="og:title" content="CSS Cheat Sheet - Quick Reference">
+    <meta property="og:description" content="Master CSS with this quick reference cheat sheet covering basic selectors, grouping selectors, attribute selectors, pseudo-classes, pseudo-elements, and more.">
+    <meta property="og:image" content="https://bumbulab.com/seo/css.png">
+    <meta property="og:url" content="https://bumbulab.com/cheatsheet/css">
+    <meta property="og:site_name" content="bumbulab.com">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@bumbulab">
+    <meta name="twitter:creator" content="@bumbulab">
+    <meta name="twitter:title" content="CSS Cheat Sheet - Quick Reference">
+    <meta name="twitter:description" content="Master CSS with this quick reference cheat sheet covering basic selectors, grouping selectors, attribute selectors, pseudo-classes, pseudo-elements, and more.">
+    <meta name="twitter:image" content="https://bumbulab.com/seo/css.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://bumbulab.com/seo/css.png">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2FW0OofqAVdCZiEYkd6dwGXthvkSFWOoGGJgS2CW70VK5dQM5Oh+7ne47s74VTg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/code.css">
-    <link rel="stylesheet" href="../theme-black.css">
+    <link rel="stylesheet" href="../styles/theme-black.css">
     <link rel="stylesheet" href="../styles/toggle.css">
     <link rel="stylesheet" href="../styles/search.css">
     <link rel="stylesheet" href="../styles/table.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--icon-->
-    <link rel="icon" href="../../img/logo.png">
-    <!--SEO-->
-    <meta name="description"
-        content="CSS Cheat Sheet contains the most common style snippets: CSS gradient, background, button, font-family, border, radius, box, flex, align, justify, text, color, size, position, etc.">
-    <meta name="keywords"
-        content="CSS, CSS Cheat Sheet, CSS Cheat Sheet 2021, CSS Cheat Sheet 2022, CSS Cheat Sheet 2023, CSS Cheat Sheet 2024, CSS Cheat Sheet 2025, CSS Cheat Sheet 2026, CSS Cheat Sheet 2027, CSS Cheat Sheet 2028, CSS Cheat Sheet 2029, CSS Cheat Sheet 2030, CSS Cheat Sheet 2031, CSS Cheat Sheet 2032, CSS Cheat Sheet 2033, CSS Cheat Sheet 2034, CSS Cheat Sheet 2035, CSS Cheat Sheet 2036, CSS Cheat Sheet 2037, CSS Cheat Sheet 2038, CSS Cheat Sheet 2039, CSS Cheat Sheet 2040">
-    <meta name="author" content="bumbulab">
-    <meta name="robots" content="index, follow">
-    <meta name="revisit-after" content="3 month">
-    <meta name="language" content="English">
-    <meta name="web_author" content="bumbulab">
-    <meta property="og:title" content="CSS Cheat Sheet">
-    <meta property="og:description"
-        content="CSS Cheat Sheet contains the most common style snippets: CSS gradient, background, button, font-family, border, radius, box, flex, align, justify, text, color, size, position, etc.">
-    <meta property="og:image" content="../../img/logo.png">
-    <meta property="og:url" content="https://bumbulab.com/cheatsheet/css">
-    <meta property="og:site_name" content="bumbulab">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:locale:alternate" content="en_GB">
-
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@bumbulab">
-    <meta name="twitter:creator" content="@bumbulab">
-    <meta name="twitter:title" content="CSS Cheat Sheet">
-    <meta name="twitter:description"
-        content="CSS Cheat Sheet contains the most common style snippets: CSS gradient, background, button, font-family, border, radius, box, flex, align, justify, text, color, size, position, etc.">
-    <meta name="twitter:image" content="../../img/logo.png">
-    <meta name="twitter:url" content="https://bumbulab.com/cheatsheet/css">
-    <meta name="twitter:label1" content="Written by">
-    <meta name="twitter:data1" content="bumbulab">
-    <meta name="twitter:label2" content="Est. reading time">
-    <meta name="twitter:data2" content="1 hour">
-    
-
+    <!--Canonical-->
+    <link rel="canonical" href="https://bumbulab.com/cheatsheet/css">
+    <!-- Inline CSS Optimization -->
+     
     <style>
-        html,
-        body,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
+        html, body, h1, h2, h3, h4, h5, h6 {
             font-family: "Roboto", sans-serif;
         }
-
         .sidebar {
             z-index: 3;
             width: 250px;
@@ -98,32 +86,32 @@
         <!--
         -->
         <ul id="menu">
-            <li id="defaultOpen" class="bar-item button" onclick="toggle(event,'css0')">Basic Selectors</li>
-            <li class="bar-item button" onclick="toggle(event,'css1')">Grouping Selectors</li>
-            <li class="bar-item button" onclick="toggle(event,'css2')">Attribute Selectors</li>
-            <li class="bar-item button" onclick="toggle(event,'css3')">Pseudo-classes</li>
-            <li class="bar-item button" onclick="toggle(event,'css4')">Pseudo-elements</li>
-            <li class="bar-item button" onclick="toggle(event,'css5')">Box Model</li>
-            <li class="bar-item button" onclick="toggle(event,'css6')">Box Sizing</li>
-            <li class="bar-item button" onclick="toggle(event,'css7')">Display Property</li>
-            <li class="bar-item button" onclick="toggle(event,'css8')">Typography</li>
-            <li class="bar-item button" onclick="toggle(event,'css9')">Color Formats</li>
-            <li class="bar-item button" onclick="toggle(event,'css10')">Background Properties</li>
-            <li class="bar-item button" onclick="toggle(event,'css11')">Gradients</li>
-            <li class="bar-item button" onclick="toggle(event,'css12')">Positioning</li>
-            <li class="bar-item button" onclick="toggle(event,'css13')">Flexbox</li>
-            <li class="bar-item button" onclick="toggle(event,'css14')">CSS Grid</li>
-            <li class="bar-item button" onclick="toggle(event,'css15')">Media Queries</li>
-            <li class="bar-item button" onclick="toggle(event,'css16')">Units</li>
-            <li class="bar-item button" onclick="toggle(event,'css17')">Variables</li>
-            <li class="bar-item button" onclick="toggle(event,'css18')">Transitions</li>
-            <li class="bar-item button" onclick="toggle(event,'css19')">Animations</li>
-            <li class="bar-item button" onclick="toggle(event,'css20')">Transformations</li>
-            <li class="bar-item button" onclick="toggle(event,'css21')">Filters and Shadows</li>
-            <li class="bar-item button" onclick="toggle(event,'css22')">Clipping and Masking</li>
-            <li class="bar-item button" onclick="toggle(event,'css23')">Performance Optimization</li>
-            <li class="bar-item button" onclick="toggle(event,'css24')">Cross-browser Compatibility</li>
-            <li class="bar-item button" onclick="toggle(event,'css25')">Accessibility Considerations</li>
+            <li id="defaultOpen" class="bar-item button" onclick="toggle(event,'css','0')">Basic Selectors</li>
+            <li class="bar-item button" onclick="toggle(event,'css','1')">Grouping Selectors</li>
+            <li class="bar-item button" onclick="toggle(event,'css','2')">Attribute Selectors</li>
+            <li class="bar-item button" onclick="toggle(event,'css','3')">Pseudo-classes</li>
+            <li class="bar-item button" onclick="toggle(event,'css','4')">Pseudo-elements</li>
+            <li class="bar-item button" onclick="toggle(event,'css','5')">Box Model</li>
+            <li class="bar-item button" onclick="toggle(event,'css','6')">Box Sizing</li>
+            <li class="bar-item button" onclick="toggle(event,'css','7')">Display Property</li>
+            <li class="bar-item button" onclick="toggle(event,'css','8')">Typography</li>
+            <li class="bar-item button" onclick="toggle(event,'css','9')">Color Formats</li>
+            <li class="bar-item button" onclick="toggle(event,'css','10')">Background Properties</li>
+            <li class="bar-item button" onclick="toggle(event,'css','11')">Gradients</li>
+            <li class="bar-item button" onclick="toggle(event,'css','12')">Positioning</li>
+            <li class="bar-item button" onclick="toggle(event,'css','13')">Flexbox</li>
+            <li class="bar-item button" onclick="toggle(event,'css','14')">CSS Grid</li>
+            <li class="bar-item button" onclick="toggle(event,'css','15')">Media Queries</li>
+            <li class="bar-item button" onclick="toggle(event,'css','16')">Units</li>
+            <li class="bar-item button" onclick="toggle(event,'css','17')">Variables</li>
+            <li class="bar-item button" onclick="toggle(event,'css','18')">Transitions</li>
+            <li class="bar-item button" onclick="toggle(event,'css','19')">Animations</li>
+            <li class="bar-item button" onclick="toggle(event,'css','20')">Transformations</li>
+            <li class="bar-item button" onclick="toggle(event,'css','21')">Filters and Shadows</li>
+            <li class="bar-item button" onclick="toggle(event,'css','22')">Clipping and Masking</li>
+            <li class="bar-item button" onclick="toggle(event,'css','23')">Performance Optimization</li>
+            <li class="bar-item button" onclick="toggle(event,'css','24')">Cross-browser Compatibility</li>
+            <li class="bar-item button" onclick="toggle(event,'css','25')">Accessibility Considerations</li>
 
 
         </ul>
@@ -134,7 +122,7 @@
     </div>
 
     <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-    <main class="main" style="margin-left:250px">
+    <main class="main" id="main" style="margin-left:250px">
             <%- content %>
         <footer id="myFooter" class="theme-d3 padding-16">
             <a href="https://bumbulab.com" target="_blank"><img src="../../img/Logo.svg" width="20px">bumbulab.com</a>
@@ -147,9 +135,9 @@
     </main>
 
 
-    <script src="../sidebar.js"></script>
-    <script src="../search.js"></script>
-    <script src="../toggle.js"></script>
+    <script src="../js/sidebar.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/toggle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/components/prism-css-extras.min.js" integrity="sha512-K0jR40qf49ofHWKKE6IRibVqiVWKhskpbKRbDkGPVau+se/pmuWgyXxzVMq8jhXPsnG4dSIaVTcn3tapA/zzKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script>

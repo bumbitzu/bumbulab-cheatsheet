@@ -32,17 +32,18 @@ async function createObject()
     return obj;
 }
 //============
-async function createContent(language, id)
+async function createContent(language)
 {
     let content = "";
     const count = await countFilesInFolder(path.join(__dirname, `md/${language}`));
+    for (let i = 0; i < count; i  ++) 
+    {
+        const mdContent = await getMarkdownContent(path.join(__dirname, `md/${language}/${i}.md`));
+        const htmlStart = `<div class="tabcontent" id="${language}${i}"><div class="row padding-64"><div class="twothird container">`
+        const htmlEnd = `</div></div></div>`;
 
-    const mdContent = await getMarkdownContent(path.join(__dirname, `md/${language}/${id}.md`));
-    const htmlStart = `<div class="tabcontent" id="${language}${id}"><div class="row padding-64"><div class="twothird container">`
-    const htmlEnd = `</div></div></div>`;
-
-    content +=  htmlStart + mdContent + htmlEnd;
-
+        content +=  htmlStart + mdContent + htmlEnd;
+    }
     return content;
 }
 module.exports = createContent;
