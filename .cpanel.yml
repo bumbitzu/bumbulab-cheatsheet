@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/bumbulab/cheat-sheet/
+    - export DEPLOYPATH=/home/bumbulab/cheatsheet/
     - mkdir -p $DEPLOYPATH
     - cp -r * $DEPLOYPATH # Copy all files to the deployment path
