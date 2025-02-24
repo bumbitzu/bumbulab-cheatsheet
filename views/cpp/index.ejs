@@ -79,11 +79,13 @@
 
     <!-- Sidebar -->
     <nav class="sidebar bar-block collapse theme-l5 animate-left" id="sidebar">
-        <a href="javascript:void(0)" onclick="closeside()" class="right xlarge padding-small hover-black hide-large"
-            title="Close Menu">
-            <i class="fa fa-remove"></i>
-        </a>
-        <input type="text" id="searchInput" onkeyup="search()" placeholder="Search.." title="Type in a category">
+        <div class="sticky">
+            <a href="javascript:void(0)" onclick="closeside()" id="closeSidebar"  class="right xlarge padding-small hover-black hide-large"
+                title="Close Menu">
+                <i class="fa fa-remove"></i>
+            </a>
+            <input type="text" id="searchInput" onkeyup="search()" placeholder="Search.." title="Type in a category">
+        </div>
         
 
         <ul id="menu">
