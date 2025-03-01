@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ChatGPT Cheat Sheet - Quick Reference</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="title" content="ChatGPT Cheat Sheet - Quick Reference">
+    <meta name="description" content="Master ChatGPT with this quick reference cheat sheet covering prompting techniques, general prompts, specific prompts, instruction-based prompts, role-based prompts, prompt clarity, step-by-step instructions, using examples, using context, setting constraints, iterating and refining prompts, common mistakes, best practices, prompt engineering, multi-step prompts, comparisons, creative prompts.">
+    <meta name="keywords" content="ChatGPT, ChatGPT Cheat Sheet, ChatGPT Quick Reference, ChatGPT Prompts, ChatGPT Examples, ChatGPT Context, ChatGPT Constraints, ChatGPT Mistakes, ChatGPT Best Practices, ChatGPT Engineering, ChatGPT Multi-Step Prompts, ChatGPT Comparisons, ChatGPT Creative Prompts">
+    <meta name="url" content="https://bumbulab.com/cheatsheet/chatgpt">
+    <meta name="author" content="Bumbu Adrian">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="web_author" content="bumbulab.com">
+
+    <!-- OpenGraph Meta Tags (pentru Facebook, LinkedIn) -->
+    <meta property="og:title" content="ChatGPT Cheat Sheet - Quick Reference">
+    <meta property="og:description" content="Master ChatGPT with this quick reference cheat sheet covering prompting techniques, general prompts, specific prompts, instruction-based prompts, role-based prompts, prompt clarity, step-by-step instructions, using examples, using context, setting constraints, iterating and refining prompts, common mistakes, best practices, prompt engineering, multi-step prompts, comparisons, creative prompts.">
+    <meta property="og:image" content="https://bumbulab.com/seo/chatgpt.png">
+    <meta property="og:url" content="https://bumbulab.com/cheatsheet/chatgpt">
+    <meta property="og:site_name" content="bumbulab.com">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@bumbulab">
+    <meta name="twitter:creator" content="@bumbulab">
+    <meta name="twitter:title" content="ChatGPT Cheat Sheet - Quick Reference">
+    <meta name="twitter:description" content="Master ChatGPT with this quick reference cheat sheet covering prompting techniques, general prompts, specific prompts, instruction-based prompts, role-based prompts, prompt clarity, step-by-step instructions, using examples, using context, setting constraints, iterating and refining prompts, common mistakes, best practices, prompt engineering, multi-step prompts, comparisons, creative prompts.">
+    <meta name="twitter:image" content="https://bumbulab.com/seo/chatgpt.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://bumbulab.com/seo/chatgpt.png">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2FW0OofqAVdCZiEYkd6dwGXthvkSFWOoGGJgS2CW70VK5dQM5Oh+7ne47s74VTg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/code.css">
+    <link rel="stylesheet" href="../styles/theme-black.css">
+    <link rel="stylesheet" href="../styles/toggle.css">
+    <link rel="stylesheet" href="../styles/search.css">
+    <link rel="stylesheet" href="../styles/table.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Canonical-->
+    <link rel="canonical" href="https://bumbulab.com/cheatsheet/chatgpt">
+    <!-- Inline CSS Optimization -->
+     
+    <style>
+        html, body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Roboto", sans-serif;
+        }
+        .sidebar {
+            z-index: 3;
+            width: 250px;
+            top: 43px;
+            bottom: 0;
+            height: inherit;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="top">
+        <div class="bar theme top left-align large">
+            <a class="bar-item button right hide-large hover-white large theme-l1" href="javascript:void(0)"
+                onclick="openside()"><i class="fa fa-bars"></i></a>
+             <img src="../img/chatgpt.svg" width="35">
+            
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <nav class="sidebar bar-block collapse theme-l5 animate-left" id="sidebar">
+        <div class="sticky">
+            <a href="javascript:void(0)" onclick="closeside()" id="closeSidebar" class="right xlarge padding-small hover-black hide-large"
+                title="Close Menu">
+                <i class="fa fa-remove"></i>
+            </a>
+        
+        <input type="text" id="searchInput" onkeyup="search()" placeholder="Search.." title="Type in a category">
+    </div>
+        <ul id="menu">
+            <li id="defaultOpen" class="bar-item button" onclick="toggle(event,'chatgpt','0')">Prompting Techniques</li>
+            <li class="bar-item button" onclick="toggle(event,'chatgpt','1')">General Prompts</li>
+            <li class="bar-item button" onclick="toggle(event,'chatgpt','2')">Specific prompts</li>
+            <li class="bar-item button" onclick="toggle(event,'chatgpt','3')">Instruction-based prompts</li>
+            <li class="bar-item button" onclick="toggle(event,'chatgpt','4')">Role-based prompts</li>
+            <li class="bar-item button" onclick="toggle(event,'chatgpt','5')">Prompt Clarity</li>
+            <li class="bar-item button" onclick="toggle(event,'chatgpt','6')">Step-by-Step Instructions</li>
+            <li class="bar-item button" onclick="toggle(event,'chatgpt','7')">Using Examples</li>
+            <li class="bar-item button" onclick="toggle(event,'chatgpt','8')">Using Context</li>
+            <li class="bar-item button" onclick="toggle(event,'chatgpt','9')">Set Constraints</li>
+            <li class="bar-item button" onclick="toggle(event,'chatgpt','10')">Iterate and Refine Prompts</li>
+            <li class="bar-item button" onclick="toggle(event,'chatgpt','11')">Common Mistakes</li>
+            <li class="bar-item button" onclick="toggle(event,'chatgpt','12')">Best Practices</li>
+            <li class="bar-item button" onclick="toggle(event,'chatgpt','13')">Prompt Engineering</li>
+            <li class="bar-item button" onclick="toggle(event,'chatgpt','14')">Multi-Step Prompts</li>
+            <li class="bar-item button" onclick="toggle(event,'chatgpt','15')">Comparasions</li>
+            <li class="bar-item button" onclick="toggle(event,'chatgpt','16')">Creative Prompts</li>
+        </ul>
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="overlay hide-large" onclick="closeside()" style="cursor:pointer" title="close side menu" id="myOverlay">
+    </div>
+
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <main class="main" id="main" style="margin-left:250px">
+            <%- content %>
+        <footer id="myFooter" class="theme-d3 padding-16">
+            <a href="https://bumbulab.com" target="_blank"><img src="../../img/Logo.svg" width="20px">bumbulab.com</a>
+        </footer>
+        <style>
+        </style>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+        <!-- END MAIN -->
+    </main>
+
+
+    <script src="../js/sidebar.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/toggle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-json.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-markdown.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-csharp.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-yaml.js"></script>
+    
+    <script>
+        Prism.highlightAll();
+    </script>
+
+</body>
+
+</html>

@@ -79,6 +79,23 @@ app.post('/cheatsheet/py/load', async (req, res) => {
     }
 });
 
+app.get('/cheatsheet/chatgpt', async (req, res) => {
+    const content = await createContent("chatgpt", '0');
+    res.render('chatgpt/index', {content: content});
+
+});
+app.post('/cheatsheet/chatgpt/load', async (req, res) => {
+
+    const { id } = req.body;
+    try {
+        const content = await createContent("chatgpt", id);
+        res.json({ success: true, content: content }); // Adaugă success: true
+    } catch (error) {
+        console.error("Error loading content:", error);
+        res.json({ success: false, content: "<p>Error loading content.</p>" });
+    }
+});
+
 // Pornim serverul
 app.listen(port, () => {
     console.log(`Serverul rulează la http://localhost:${port}`);
