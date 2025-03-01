@@ -95,6 +95,23 @@ app.post('/cheatsheet/chatgpt/load', async (req, res) => {
         res.json({ success: false, content: "<p>Error loading content.</p>" });
     }
 });
+//express
+app.get('/cheatsheet/express', async (req, res) => {
+    const content = await createContent("express", '0');
+    res.render('express/index', {content: content});
+
+});
+app.post('/cheatsheet/express/load', async (req, res) => {
+
+    const { id } = req.body;
+    try {
+        const content = await createContent("express", id);
+        res.json({ success: true, content: content }); // Adaugă success: true
+    } catch (error) {
+        console.error("Error loading content:", error);
+        res.json({ success: false, content: "<p>Error loading content.</p>" });
+    }
+});
 
 // Pornim serverul
 app.listen(port, () => {
