@@ -39,7 +39,9 @@ async function createContent(language, id)
 
     const mdContent = await getMarkdownContent(path.join(__dirname, `md/${language}/${id}.md`));
     const htmlStart = `<div class="tabcontent" id="${language}${id}"><div class="row padding-64"><div class="twothird container">`
-    const htmlEnd = `</div></div></div>`;
+    const htmlEnd = `</div></div></div><footer id="myFooter" class="theme-d3 padding-16">
+            <a href="https://bumbulab.com" target="_blank"><img src="../../img/Logo.svg" width="20px">bumbulab.com</a>
+        </footer>`;
 
     content +=  htmlStart + mdContent + htmlEnd;
 

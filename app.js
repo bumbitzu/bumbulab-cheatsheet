@@ -112,7 +112,23 @@ app.post('/cheatsheet/express/load', async (req, res) => {
         res.json({ success: false, content: "<p>Error loading content.</p>" });
     }
 });
+//html
+app.get('/cheatsheet/html', async (req, res) => {
+    const content = await createContent("html", '0');
+    res.render('html/index', {content: content});
 
+});
+app.post('/cheatsheet/html/load', async (req, res) => {
+
+    const { id } = req.body;
+    try {
+        const content = await createContent("html", id);
+        res.json({ success: true, content: content }); // Adaugă success: true
+    } catch (error) {
+        console.error("Error loading content:", error);
+        res.json({ success: false, content: "<p>Error loading content.</p>" });
+    }
+});
 // Pornim serverul
 app.listen(port, () => {
     console.log(`Serverul rulează la http://localhost:${port}`);

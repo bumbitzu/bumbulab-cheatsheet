@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML CheatSheet - Quick Reference</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="title" content="HTML Cheat Sheet - Quick Reference">
+    <meta name="description" content="Master HTML with this quick reference cheat sheet covering HTML basics, HTML elements, HTML attributes, HTML headings, HTML paragraphs, HTML links, HTML images, HTML tables, HTML lists, HTML forms, HTML entities, HTML symbols, HTML colors, HTML styles, HTML layout, HTML responsive, HTML validation, HTML resources.">
+    <meta name="keywords" content="HTML, Cheat Sheet, Quick Reference, HTML basics, HTML elements, HTML attributes, HTML headings, HTML paragraphs, HTML links, HTML images, HTML tables, HTML lists, HTML forms, HTML entities, HTML symbols, HTML colors, HTML styles, HTML layout, HTML responsive, HTML validation, HTML resources">
+    <meta name="url" content="https://bumbulab.com/cheatsheet/html">
+    <meta name="author" content="Bumbu Adrian">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="web_author" content="bumbulab.com">
+
+    <!-- OpenGraph Meta Tags (pentru Facebook, LinkedIn) -->
+    <meta property="og:title" content="HTML Cheat Sheet - Quick Reference">
+    <meta property="og:description" content="Master HTML with this quick reference cheat sheet covering HTML basics, HTML elements, HTML attributes, HTML headings, HTML paragraphs, HTML links, HTML images, HTML tables, HTML lists, HTML forms, HTML entities, HTML symbols, HTML colors, HTML styles, HTML layout, HTML responsive, HTML validation, HTML resources.">
+    <meta property="og:image" content="https://bumbulab.com/seo/html.png">
+    <meta property="og:url" content="https://bumbulab.com/cheatsheet/html">
+    <meta property="og:site_name" content="bumbulab.com">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@bumbulab">
+    <meta name="twitter:creator" content="@bumbulab">
+    <meta name="twitter:title" content="HTML Cheat Sheet - Quick Reference">
+    <meta name="twitter:description" content="Master HTML with this quick reference cheat sheet covering HTML basics, HTML elements, HTML attributes, HTML headings, HTML paragraphs, HTML links, HTML images, HTML tables, HTML lists, HTML forms, HTML entities, HTML symbols, HTML colors, HTML styles, HTML layout, HTML responsive, HTML validation, HTML resources.">
+    <meta name="twitter:image" content="https://bumbulab.com/seo/html.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://bumbulab.com/seo/html.png">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" integrity="sha512-vswe+cgvic/XBoF1OcM/TeJ2FW0OofqAVdCZiEYkd6dwGXthvkSFWOoGGJgS2CW70VK5dQM5Oh+7ne47s74VTg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/code.css">
+    <link rel="stylesheet" href="../styles/theme-black.css">
+    <link rel="stylesheet" href="../styles/toggle.css">
+    <link rel="stylesheet" href="../styles/search.css">
+    <link rel="stylesheet" href="../styles/table.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <!--Canonical-->
+    <link rel="canonical" href="https://bumbulab.com/cheatsheet/express">
+    <!-- Inline CSS Optimization -->
+     
+    <style>
+        html, body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Roboto", sans-serif;
+        }
+        .sidebar {
+            z-index: 3;
+            width: 250px;
+            top: 43px;
+            bottom: 0;
+            height: inherit;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="top">
+        <div class="bar theme top left-align large">
+            <a class="bar-item button right hide-large hover-white large theme-l1" href="javascript:void(0)"
+                onclick="openside()"><i class="fa fa-bars"></i></a>
+             <img src="../img/html.svg" width="35">
+            
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <nav class="sidebar bar-block collapse theme-l5 animate-left" id="sidebar">
+        <div class="sticky">
+            <a href="javascript:void(0)" onclick="closeside()" id="closeSidebar" class="right xlarge padding-small hover-black hide-large"
+                title="Close Menu">
+                <i class="fa fa-remove"></i>
+            </a>
+        
+        <input type="text" id="searchInput" onkeyup="search()" placeholder="Search.." title="Type in a category">
+    </div>
+    <!--
+
+
+What is HTML?
+Basic Structure of an HTML Document
+
+
+Common HTML Tags
+Nesting and Closing Tags
+HTML Attributes
+
+
+Headings (<h1> to <h6>)
+Paragraphs (<p>)
+Bold, Italic, and Underline (<b>, <i>, <u>)
+Lists (<ul>, <ol>, <li>)
+Blockquote & Code (<blockquote>, <pre>, <code>)
+
+
+Anchor Tags (<a>)
+Absolute vs. Relative URLs
+
+Inserting Images (<img>)
+Audio & Video Elements (<audio>, <video>)
+Embedding External Media (YouTube, Maps)
+
+
+Basic Form Structure (<form>)
+Input Types (<input type="text">, <input type="email">, <input type="password">)
+Buttons (<button>, <input type="submit">)
+Labels & Accessibility (<label>, aria-* attributes)
+Table Structure (<table>, <tr>, <td>, <th>)
+
+
+Sectioning Elements (<section>, <article>, <header>, <footer>)
+The <nav> and <aside> Elements
+Benefits of Using Semantic HTML
+
+
+Placeholder, Required, and Pattern Attributes
+Dropdowns and Radio Buttons (<select>, <option>, <radio>)
+Validation & Custom Error Messages
+
+
+Character Encoding (<meta charset="UTF-8">)
+Viewport Settings for Responsive Design
+Open Graph & Twitter Meta Tags
+
+Writing Clean & Valid HTML
+Using ARIA Roles for Accessibility
+Keyboard Navigation Considerations
+    -->
+        <ul id="menu">
+            <li id="defaultOpen" class="bar-item button" onclick="toggle(event,'html','0')">Introduction to HTML</li>
+            <li class="bar-item button" onclick="toggle(event,'html','1')">Common HTML Tags</li>
+            <li class="bar-item button" onclick="toggle(event,'html','2')">Nesting and Closing Tags</li>
+            <li class="bar-item button" onclick="toggle(event,'html','3')">HTML Attributes</li>
+            <li class="bar-item button" onclick="toggle(event,'html','4')">Headings</li>
+            <li class="bar-item button" onclick="toggle(event,'html','5')">Paragraphs</li>
+            <li class="bar-item button" onclick="toggle(event,'html','6')">Bold, Italic, and Underline</li>
+            <li class="bar-item button" onclick="toggle(event,'html','7')">Lists</li>
+            <li class="bar-item button" onclick="toggle(event,'html','8')">Blockquote & Code</li>
+            <li class="bar-item button" onclick="toggle(event,'html','9')">Anchor Tags</li>
+            <li class="bar-item button" onclick="toggle(event,'html','10')">Absolute vs. Relative URLs</li>
+            <li class="bar-item button" onclick="toggle(event,'html','11')">Inserting Images</li>
+            <li class="bar-item button" onclick="toggle(event,'html','12')">Audio & Video Elements</li>
+            <li class="bar-item button" onclick="toggle(event,'html','13')">Embedding External Media</li>
+            <li class="bar-item button" onclick="toggle(event,'html','14')">Basic Form Structure</li>
+            <li class="bar-item button" onclick="toggle(event,'html','15')">Input Types</li>
+            <li class="bar-item button" onclick="toggle(event,'html','16')">Buttons</li>
+            <li class="bar-item button" onclick="toggle(event,'html','17')">Labels & Accessibility</li>
+            <li class="bar-item button" onclick="toggle(event,'html','18')">Table Structure</li>
+            <li class="bar-item button" onclick="toggle(event,'html','19')">Sectioning Elements</li>
+            <li class="bar-item button" onclick="toggle(event,'html','20')">The nav & aside Elements</li>
+            <li class="bar-item button" onclick="toggle(event,'html','21')">Benefits of Using Semantic HTML</li>
+            <li class="bar-item button" onclick="toggle(event,'html','22')">Placeholder, Required, and Pattern Attributes</li>
+            <li class="bar-item button" onclick="toggle(event,'html','23')">Dropdowns and Radio Buttons</li>
+            <li class="bar-item button" onclick="toggle(event,'html','24')">Validation & Custom Error Messages</li>
+            <li class="bar-item button" onclick="toggle(event,'html','25')">Meta Tags</li>
+            <li class="bar-item button" onclick="toggle(event,'html','26')">HTML APIs</li>
+            <li class="bar-item button" onclick="toggle(event,'html','27')">Best Practices & Accessibility Attributes</li>
+            <li class="bar-item button" onclick="toggle(event,'html','28')">Keyboard Navigation Considerations</li>
+        </ul>
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="overlay hide-large" onclick="closeside()" style="cursor:pointer" title="close side menu" id="myOverlay">
+    </div>
+
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <main class="main" id="main" style="margin-left:250px">
+            <%- content %>
+    </main>
+
+
+    <script src="../js/sidebar.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/toggle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-json.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-html.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-graphql.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-pgsql.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-yaml.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-nginx.js"></script>
+    
+    <script>
+        Prism.highlightAll();
+    </script>
+
+</body>
+
+</html>
